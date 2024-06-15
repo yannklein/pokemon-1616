@@ -33,17 +33,21 @@
   <body class="bg-dark">
     <div id="app" class="container">
       <h1>Gotta Catch 'Em All</h1>
-      <p class="text-center">Yoga tomorrow 🧘</p>
       <div class="two-columns">
 
         <div id="cardsContainer" class="grid">
-
+          <!-- 20 pokemons cards -->
         </div>
+
+        <div id="infoContainer">
+          <!-- details about one card  -->
+        </div>
+
 
         <template id="cardTemplate">
           <div class="pokemon-card">
             <img class="pokemon-card-image" src={{imageUrl}} />
-            <h2 class="pokemon-card-title">{{name}}</h5>
+            <h5 class="pokemon-card-title">{{name}}</h5>
             {{#types}}
             <p class="pokemon-card-subtitle">{{.}}</p>
             {{/types}}
@@ -51,9 +55,6 @@
           </div>
         </template>
 
-        <div id="infoContainer">
-
-        </div>
 
         <template id="infoTemplate">
           <div class="info">
