@@ -54,6 +54,7 @@ h1 {
 
 .pokemon-card-image {
   width: 100%;
+  max-height: 80%;
 }
 
 .pokemon-card-link {
@@ -66,7 +67,7 @@ h1 {
 }
 
 .info {
-  height: 100vh;
+  height: calc(100vh - 102px);
   position: sticky;
   top: 0;
 }
